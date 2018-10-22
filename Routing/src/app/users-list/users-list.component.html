@@ -1,0 +1,8 @@
+<div *ngIf="!error; else elseBlock">
+  <ul *ngFor ="let user of users">
+    <li>{{user.username}}</li>
+  </ul>
+</div>
+<ng-template #elseBlock>
+  <h6>{{error.message}}</h6>
+</ng-template>
